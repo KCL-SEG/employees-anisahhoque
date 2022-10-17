@@ -48,13 +48,13 @@ class Employee:
         if paystate[1] == "1":
             statement = (f"{self.name} works on a monthly salary of {self.monthly} and receives a commission for {self.commision[0]} contract(s) at {self.commision[1]}/contract. Their total pay is {paystate[0]}.")
         elif paystate[1] == "2":
-            statement = (f"{self.name} works on a monthly salary of {self.monthly} and receives a bonus commission of{self.commision[0]}. Their total pay is {paystate[0]}.")
+            statement = (f"{self.name} works on a monthly salary of {self.monthly} and receives a bonus commission of {self.commision[0]}. Their total pay is {paystate[0]}.")
         elif paystate[1] == "3":
             statement = (f"{self.name} works on a monthly salary of {self.monthly}. Their total pay is {paystate[0]}.")
         elif paystate[1] == "4":
             statement = (f"{self.name} works on a contract of {self.contract[0]} hours at {self.contract[1]}/hour and receives a commission for {self.commision[0]} contract(s) at {self.commision[1]}/contract. Their total pay is {paystate[0]}.")
         elif paystate[1] == "5":
-            statement = (f"{self.name} works on a monthly salary of {self.contract[0]} hours at {self.contract[1]}/hour and receives a bonus commission of{self.commision[0]}. Their total pay is {paystate[0]}.")
+            statement = (f"{self.name} works on a contract of {self.contract[0]} hours at {self.contract[1]}/hour and receives a bonus commission of {self.commision[0]}. Their total pay is {paystate[0]}.")
         elif paystate[1] == "6":
             statement = (f"{self.name} works on a contract of {self.contract[0]} hours at {self.contract[1]}/hour. Their total pay is {paystate[0]}.")
         return statement
